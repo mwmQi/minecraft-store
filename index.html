@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your SMP | Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.5.55/css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER SPLASH -->
+<div class="header-splash"></div>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="header-wrapper">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <a href="#" class="back-btn"><i class="mdi mdi-reply"></i> <span>Main Website</span></a>
+            <div class="profile-avatar" id="loginBtn">
+                <div class="profile-description">
+                    <p class="profile-title">Guest</p>
+                    <p class="profile-desc">Click to login</p>
+                </div>
+                <div class="profile-head">
+                    <img src="https://cravatar.eu/helmavatar/MHF_Question/64.png" alt="Head" width="32">
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Widgets -->
+        <div class="header-widgets">
+            <div class="widget server-widget" id="copyIP">
+                <div class="widget-icon"><i class="mdi mdi-play-circle"></i></div>
+                <div class="widget-text">
+                    <p class="widget-title">play.yoursmp.net</p>
+                    <p class="widget-desc">click to copy</p>
+                </div>
+            </div>
+            <div class="header-logo">
+                <a href="/">
+                    <img src="https://via.placeholder.com/150x150/1a1a2e/e94560?text=SMP" alt="Logo" class="logo-img">
+                </a>
+            </div>
+            <div class="widget discord-widget">
+                <div class="widget-text">
+                    <a href="#" target="_blank">
+                        <p class="widget-title">Discord Server</p>
+                        <p class="widget-desc">click to join</p>
+                    </a>
+                </div>
+                <div class="widget-icon"><i class="mdi mdi-discord"></i></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- MAIN BODY -->
+<div class="main-wrapper">
+    <div class="body-with-sidebar">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <p><i class="mdi mdi-close close-mobile"></i> <i class="mdi mdi-menu menu-mobile"></i> Select a category</p>
+            </div>
+            <div class="sidebar-nav">
+                <ul>
+                    <li class="has-dropdown open">
+                        <a href="javascript:void(0);" class="dropdown-toggle active" id="nav-survival">
+                            <i class="mdi mdi-shield-home"></i> Survival
+                            <i class="mdi mdi-chevron-down caret"></i>
+                        </a>
+                        <ul class="dropdown-menu show">
+                            <li><a href="#ranks" class="nav-link active" data-section="ranks"><i class="mdi mdi-star"></i> Ranks</a></li>
+                            <li><a href="#keys" class="nav-link" data-section="keys"><i class="mdi mdi-key-variant"></i> Crate Keys</a></li>
+                            <li><a href="#items" class="nav-link" data-section="items"><i class="mdi mdi-cube-outline"></i> Items</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#policy" class="nav-link" data-section="policy"><i class="mdi mdi-file-document"></i> Terms & Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- HOME SECTION -->
+            <section id="home" class="content-section active">
+                <div class="home-splash">
+                    <div class="welcome-text">
+                        <p>Welcome to the official</p>
+                        <h1>YOUR SMP STORE</h1>
+                    </div>
+                </div>
+
+                <p class="home-desc">
+                    Welcome to our Minecraft Survival server! We are a community-driven server focused on providing the best survival experience. Join us today and start your adventure!
+                    <br><br>
+                    This is the official store page. Select a category from the sidebar to browse available packages. All purchases help keep the server running and support new features.
+                    <br><br>
+                    Server IP: <b>play.yoursmp.net</b>
+                </p>
+
+                <!-- Support -->
+                <div class="info-block">
+                    <h3 class="info-title support"><i class="mdi mdi-help-circle"></i> Support</h3>
+                    <p>Need help before checkout? Join our Discord community or email us. For payment support, submit a ticket on our Discord server.</p>
+                    <div class="support-buttons">
+                        <a href="mailto:support@yoursmp.net" class="btn btn-email"><i class="mdi mdi-email"></i> Email</a>
+                        <a href="#" class="btn btn-discord"><i class="mdi mdi-discord"></i> Discord</a>
+                    </div>
+                </div>
+
+                <!-- Refund Policy -->
+                <div class="info-block">
+                    <h3 class="info-title refund"><i class="mdi mdi-cash-refund"></i> Refund Policy</h3>
+                    <p>All payments are final and non-refundable. Purchases are credited in-game within 1-20 minutes. If not credited, open a support ticket with proof of purchase.</p>
+                </div>
+
+                <!-- Recent Payments -->
+                <div class="module recent-payments">
+                    <div class="module-header">
+                        <i class="mdi mdi-account-group"></i>
+                        <p>Recent Payments</p>
+                    </div>
+                    <div class="payments-grid">
+                        <div class="payment-avatar">
+                            <div class="tooltip">Steve</div>
+                            <img src="https://crafthead.net/avatar/Steve" width="64" alt="Steve">
+                        </div>
+                        <div class="payment-avatar">
+                            <div class="tooltip">Alex</div>
+                            <img src="https://crafthead.net/avatar/Alex" width="64" alt="Alex">
+                        </div>
+                        <div class="payment-avatar">
+                            <div class="tooltip">Notch</div>
+                            <img src="https://crafthead.net/avatar/Notch" width="64" alt="Notch">
+                        </div>
+                        <div class="payment-avatar">
+                            <div class="tooltip">Herobrine</div>
+                            <img src="https://crafthead.net/avatar/Herobrine" width="64" alt="Herobrine">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Giftcard -->
+                <div class="module giftcard-module">
+                    <div class="module-header">
+                        <i class="mdi mdi-gift"></i>
+                        <p>Giftcard Balance</p>
+                    </div>
+                    <div class="giftcard-body">
+                        <input type="text" placeholder="Card Number" id="giftcode">
+                        <button class="btn btn-check">Check</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RANKS SECTION -->
+            <section id="ranks" class="content-section">
+                <div class="section-header">
+                    <h2><i class="mdi mdi-star"></i> Ranks</h2>
+                    <p>Unlock perks and privileges on the server</p>
+                </div>
+                <div class="packages-grid">
+                    <div class="package-card" data-rank="vip">
+                        <div class="package-header" style="background: linear-gradient(135deg, #2ecc71, #27ae60);">
+                            <h3>VIP</h3>
+                            <div class="package-price">$5.00</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> Custom prefix</li>
+                                <li><i class="mdi mdi-check"></i> 2 homes</li>
+                                <li><i class="mdi mdi-check"></i> /fly in lobby</li>
+                                <li><i class="mdi mdi-check"></i> VIP kit</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('VIP Rank', 5.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="package-card" data-rank="mvp">
+                        <div class="package-header" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                            <h3>MVP</h3>
+                            <div class="package-price">$10.00</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> Everything in VIP</li>
+                                <li><i class="mdi mdi-check"></i> 5 homes</li>
+                                <li><i class="mdi mdi-check"></i> /ec (enderchest)</li>
+                                <li><i class="mdi mdi-check"></i> Colored chat</li>
+                                <li><i class="mdi mdi-check"></i> MVP kit</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('MVP Rank', 10.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="package-card" data-rank="titan">
+                        <div class="package-header" style="background: linear-gradient(135deg, #e67e22, #d35400);">
+                            <h3>Titan</h3>
+                            <div class="package-price">$15.00</div>
+                            <div class="badge">Popular</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> Everything in MVP</li>
+                                <li><i class="mdi mdi-check"></i> 8 homes</li>
+                                <li><i class="mdi mdi-check"></i> /nick</li>
+                                <li><i class="mdi mdi-check"></i> Particle effects</li>
+                                <li><i class="mdi mdi-check"></i> Titan kit</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('Titan Rank', 15.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="package-card" data-rank="cosmic">
+                        <div class="package-header" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+                            <h3>Cosmic</h3>
+                            <div class="package-price">$20.00</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> Everything in Titan</li>
+                                <li><i class="mdi mdi-check"></i> 12 homes</li>
+                                <li><i class="mdi mdi-check"></i> /workbench</li>
+                                <li><i class="mdi mdi-check"></i> Exclusive cosmetics</li>
+                                <li><i class="mdi mdi-check"></i> Cosmic kit</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('Cosmic Rank', 20.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="package-card" data-rank="celestial">
+                        <div class="package-header" style="background: linear-gradient(135deg, #f1c40f, #f39c12);">
+                            <h3>Celestial</h3>
+                            <div class="package-price">$30.00</div>
+                            <div class="badge">Best</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> Everything in Cosmic</li>
+                                <li><i class="mdi mdi-check"></i> Unlimited homes</li>
+                                <li><i class="mdi mdi-check"></i> Priority queue</li>
+                                <li><i class="mdi mdi-check"></i> All cosmetics</li>
+                                <li><i class="mdi mdi-check"></i> Celestial kit</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('Celestial Rank', 30.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- KEYS SECTION -->
+            <section id="keys" class="content-section">
+                <div class="section-header">
+                    <h2><i class="mdi mdi-key-variant"></i> Crate Keys</h2>
+                    <p>Open crates for exclusive rewards</p>
+                </div>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <div class="package-header" style="background: linear-gradient(135deg, #f1c40f, #f39c12);">
+                            <h3>Spawner Key x5</h3>
+                            <div class="package-price">$2.00</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> 5 Spawner Crate Keys</li>
+                                <li><i class="mdi mdi-check"></i> Basic rewards</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('Spawner Key x5', 2.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="package-card">
+                        <div class="package-header" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                            <h3>Supreme Key x5</h3>
+                            <div class="package-price">$5.00</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> 5 Supreme Crate Keys</li>
+                                <li><i class="mdi mdi-check"></i> Better rewards</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('Supreme Key x5', 5.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="package-card">
+                        <div class="package-header" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+                            <h3>Amethyst Key x3</h3>
+                            <div class="package-price">$8.00</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> 3 Amethyst Crate Keys</li>
+                                <li><i class="mdi mdi-check"></i> Premium rewards</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('Amethyst Key x3', 8.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="package-card">
+                        <div class="package-header" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+                            <h3>Prime Key x3</h3>
+                            <div class="package-price">$12.00</div>
+                            <div class="badge">Best Value</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> 3 Prime Crate Keys</li>
+                                <li><i class="mdi mdi-check"></i> Legendary rewards</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('Prime Key x3', 12.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ITEMS SECTION -->
+            <section id="items" class="content-section">
+                <div class="section-header">
+                    <h2><i class="mdi mdi-cube-outline"></i> Items</h2>
+                    <p>Get useful items delivered to your inventory</p>
+                </div>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <div class="package-header" style="background: linear-gradient(135deg, #1abc9c, #16a085);">
+                            <h3>Starter Kit</h3>
+                            <div class="package-price">$3.00</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> Diamond Sword</li>
+                                <li><i class="mdi mdi-check"></i> Diamond Pickaxe</li>
+                                <li><i class="mdi mdi-check"></i> Full Iron Armor</li>
+                                <li><i class="mdi mdi-check"></i> 64 Steak</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('Starter Kit', 3.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="package-card">
+                        <div class="package-header" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                            <h3>Farm Bundle</h3>
+                            <div class="package-price">$5.00</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> 32 Wheat Seeds</li>
+                                <li><i class="mdi mdi-check"></i> 16 Saplings</li>
+                                <li><i class="mdi mdi-check"></i> 8 Bone Blocks</li>
+                                <li><i class="mdi mdi-check"></i> Diamond Hoe</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('Farm Bundle', 5.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="package-card">
+                        <div class="package-header" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+                            <h3>100 Claim Blocks</h3>
+                            <div class="package-price">$2.00</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li><i class="mdi mdi-check"></i> 100 Claim Blocks</li>
+                                <li><i class="mdi mdi-check"></i> Expand your land</li>
+                            </ul>
+                            <button class="btn btn-purchase" onclick="addToCart('100 Claim Blocks', 2.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- POLICY SECTION -->
+            <section id="policy" class="content-section">
+                <div class="section-header">
+                    <h2><i class="mdi mdi-file-document"></i> Terms & Policy</h2>
+                </div>
+                <div class="policy-content">
+                    <h3>Terms of Service</h3>
+                    <p>By purchasing from our store, you agree to the following terms:</p>
+                    <ul>
+                        <li>All purchases are final and non-refundable.</li>
+                        <li>Items are delivered within 1-20 minutes in-game.</li>
+                        <li>Abuse of store perks may result in a ban.</li>
+                        <li>We reserve the right to modify packages at any time.</li>
+                    </ul>
+                    <h3>Privacy Policy</h3>
+                    <p>We collect minimal data necessary for processing payments. Your information is never shared with third parties.</p>
+                    <h3>Refund Policy</h3>
+                    <p>No refunds are offered. If you experience issues, contact support with proof of purchase.</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</div>
+
+<!-- CART SIDEBAR -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <h3><i class="mdi mdi-cart"></i> Shopping Cart</h3>
+        <button class="cart-close" id="cartClose"><i class="mdi mdi-close"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+        <p class="cart-empty">Your cart is empty</p>
+    </div>
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="btn btn-checkout" id="checkoutBtn">Checkout</button>
+    </div>
+</div>
+
+<!-- FLOATING CART BUTTON -->
+<button class="floating-cart" id="floatingCart">
+    <i class="mdi mdi-cart"></i>
+    <span class="cart-count" id="cartCount">0</span>
+</button>
+
+<!-- FOOTER -->
+<div class="main-wrapper">
+    <div class="footer">
+        <p class="copyright">© 2026 Your SMP. All Rights Reserved.</p>
+        <p class="copyright-sub">We are not affiliated with Mojang AB.</p>
+    </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="modal-overlay" id="loginModal">
+    <div class="modal">
+        <div class="modal-header">
+            <h3>Login</h3>
+            <button class="modal-close" id="modalClose"><i class="mdi mdi-close"></i></button>
+        </div>
+        <div class="modal-body">
+            <div class="platform-tabs">
+                <button class="tab active" id="tabJava">Java</button>
+                <button class="tab" id="tabBedrock">Bedrock</button>
+            </div>
+            <input type="text" id="usernameInput" placeholder="Enter your username" maxlength="16">
+            <p class="login-hint">Usernames are case sensitive, no spaces allowed.</p>
+            <p class="login-error" id="loginError"></p>
+            <button class="btn btn-login" id="submitLogin">Login</button>
+        </div>
+    </div>
+</div>
+
+<!-- TOAST NOTIFICATION -->
+<div class="toast" id="toast">
+    <i class="mdi mdi-check-circle"></i>
+    <span id="toastMsg">Copied to clipboard!</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
